@@ -1,4 +1,6 @@
-#!/home/alumnado/Escritorio/PracticaModelos/myvenv/bin/python
+#!/bin/sh
+'''exec' "/home/alumnado/Escritorio/ejercicios de servidor/PracticaModelos/myvenv/bin/python" "$0" "$@"
+' '''
 # -*- coding: utf-8 -*-
 import re
 import sys
