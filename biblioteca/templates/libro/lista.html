@@ -8,21 +8,10 @@
 </head>
 <body>
     
-    <h1>Este es libro</h1>
-    
-
     {% for libro in libros_mostrar%}
-    <div>
-        <h2>Nombre: {{libro.nombre}}</h2>
-        <h2>biblioteca: {{libro.biblioteca.nombre}}</h2>
-        <h2>Autores</h2>
-        <ul>
-            {%for autor in libro.autores.all%}
-                <li>{{autor.nombre}}</li>
-            {% endfor %}
-        </ul>
-        <a href="{% url 'dame_libro' libro.id %}">Pulsa para ir al libro</a>
-    </div>
+        {% include 'libro/libro.html' %}
+    {% empty %}
+        <h1>Lo siento pero no hay libros</h1>
     {% endfor %}
     
 </body>

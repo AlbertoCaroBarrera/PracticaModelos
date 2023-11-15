@@ -59,3 +59,5 @@ class Prestamo(models.Model):
     cliente = models.ForeignKey(Cliente, on_delete=models.CASCADE)
     libro = models.ForeignKey(Libro,on_delete=models.CASCADE)
     fecha_prestamo = models.DateTimeField(default=timezone.now)
+    
+    

@@ -23,7 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-z0_ok4d0n36zsq#r(9f4&r40*!7w!=vg(bz!_lm2@s2q0h6xwu'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = []
 
@@ -39,6 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'biblioteca',
     'django_seed',
+    'bootstrap5',
+    'django_bootstrap_icons',
 
 ]
 
